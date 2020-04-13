@@ -1,0 +1,76 @@
+:root {
+  --main-bg-color: #cdd5d5;  
+}
+
+.App {
+  text-align: center;
+  background-color: gray;
+}
+
+.App-header {
+  padding-top: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+
+ul {
+   display: block;
+   max-width: 100%;
+   padding: 10px;
+   margin: 10px;
+   list-style-type: none;
+}
+
+li {
+   width: 100%;
+   display: inline-block;
+   margin: 10px 0;
+   background-color: var(--main-bg-color);
+   text-align: center;
+}
+
+li p {
+   	font-size: 20px;
+   	margin: 10px;
+   	font-weight: 700;
+   	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+li p:first-child {
+	font-weight: 400;
+}
+
+li p:last-child {
+  	color: red;
+  	font-size: 34px;
+}
+
+li img {
+	width: calc(100% - 20px);
+}
+
+@media screen and (min-width: 1200px) {
+  div {
+      text-align: center;
+  }
+
+  li {
+      width: 30%;
+      margin: 0 1%;
+      text-align: center;
+      padding: 0;
+      margin: 10px;
+  }
+
+  li img, li p {
+      float: none;
+  }
+
+  li p, li p:last-child {
+      font-size: 20px;
+  }
+}
