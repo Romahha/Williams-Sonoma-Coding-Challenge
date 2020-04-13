@@ -43,7 +43,7 @@ class SlideShow extends Component  {
 	});
  
     return (<div className={"slideshow-container " + 
-    	(this.props.show ? 'show' : 'hide')} >
+    	(this.props.show && this.props.showFromOverlay ? 'show' : 'hide')} >
     	<span className='prev' onClick={this.previousSlide}>{"<"}</span>
 	    <ul>
 	        {slides}

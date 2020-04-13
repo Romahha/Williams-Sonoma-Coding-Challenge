@@ -25,7 +25,8 @@ const listItem = (props) => {
     		<p>Last Chance Selling ${props.priceRangeSelling}</p>
 		    <SlideShow 
 		    	images={props.images} 
-		    	show={stateArr.classShow} />
+		    	show={stateArr.classShow}
+		    	showFromOverlay={props.show} />
     	</div>
     </li>);
 }

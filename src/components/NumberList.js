@@ -2,7 +2,7 @@ import React from 'react';
 import './../style/NumberList.css';
 import ListItem from './ListItem.js';
 
-function NumberList(props) {
+const NumberList = (props) => {
     const listItems = props.groups.map((group) =>{
   	if(group.priceRange !== undefined) {
   		return (<ListItem 
@@ -13,6 +13,7 @@ function NumberList(props) {
 	    	priceRangeSelling={group.priceRange.selling.low}
 	    	hero={group.hero} 
 	    	clicked={props.clicked}
+	    	show={props.show}
 	    	images = {group.images} />
 	    )
   	} else {
@@ -24,6 +25,7 @@ function NumberList(props) {
 	    	priceRangeSelling={group.price.selling}
 	    	hero={group.hero} 
 	    	clicked={props.clicked} 
+	    	show={props.show}
 	    	images ={group.images} />
 	    )
   	}

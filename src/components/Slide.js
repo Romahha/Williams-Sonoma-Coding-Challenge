@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Slide(props) {
+const Slide = (props) => {
     return (<li>
     	<div>
     		<img src={props.href} alt={props.href}

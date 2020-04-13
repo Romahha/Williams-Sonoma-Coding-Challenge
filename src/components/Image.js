@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Image(props) {
+const Image = (props) => {
     return <img 
     src={props.hero.href} 
     alt={props.hero.alt}
